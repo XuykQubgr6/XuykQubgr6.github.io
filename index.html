@@ -98,32 +98,20 @@ margin-right:5px;
 font-weight:bold;
 }
 
-/* 🔥 СКРЫТАЯ КНОПКА */
-.hidden-secret-btn{
+.hidden-btn{
 display:block;
-width:240px;
+width:220px;
 height:40px;
-margin:60px auto 0 auto;
+margin:120px auto 0 auto;
 background:transparent;
 color:transparent;
 border:none;
-text-align:center;
-text-decoration:none;
-line-height:40px;
-transition:0.2s;
 }
 
-.hidden-secret-btn:hover{
+.hidden-btn:hover{
 color:black;
 border:3px dotted red;
 background:#ffff99;
-}
-
-/* маленький эффект "пустого места" */
-.hidden-secret-btn::after{
-content:"";
-display:block;
-height:20px;
 }
 
 marquee{
@@ -133,46 +121,65 @@ font-weight:bold;
 </style>
 
 </head>
+
 <body>
 
 <div class="header">ТАИНЫЙ ДНИВНИК РОЗЫ</div>
 <hr class="divider">
 
-<div class="page active" id="page-1"><div class="diary-header">ТАИНЫЙ ДНИВНИК РОЗЫ</div><center><marquee>!!! МОЙ САЙТ НЕ КАПИРОВАТЬ !!!</marquee></center><br><br>
+<div class="page active" id="page-1">
+  <div class="diary-header">ТАИНЫЙ ДНИВНИК РОЗЫ</div>
+  <center><marquee>!!! МОЙ САЙТ НЕ КАПИРОВАТЬ !!!</marquee></center><br><br>
   <div class="page-title">Запись 1. ПРОСТО ДЕНЬ!!</div>
-  <p>Сегодня была в школе и там Ника апять писала мне заметки на уроке математики но я не отвечала потомушто МНЕ БЫЛО НЕИНТЕРЕСНО!!!</p>
+  <p>...</p>
 </div>
 
 <div class="page" id="page-2">
   <div class="diary-header">ТАИНЫЙ ДНИВНИК РОЗЫ</div>
   <div class="page-title">Запись 2. ПРО ШИФРЫ!!!</div>
+  <p>...</p>
 </div>
 
 <div class="page" id="page-3">
   <div class="diary-header">ТАИНЫЙ ДНИВНИК РОЗЫ</div>
   <div class="page-title">Запись 3. МЫ НАШЛИ МЕСТО!!</div>
+  <p>...</p>
 </div>
 
 <div class="page" id="page-4">
   <div class="diary-header">ТАИНЫЙ ДНИВНИК РОЗЫ</div>
   <div class="page-title">Запись 4. РЫЖАЯ ПРИЕХАЛА!!!</div>
+  <p>...</p>
 </div>
 
 <div class="page" id="page-5">
   <div class="diary-header">ТАИНЫЙ ДНИВНИК РОЗЫ</div>
   <div class="page-title">Запись 5. САНСКРИТ!!</div>
+  <p>...</p>
 </div>
 
 <div class="page" id="page-6">
   <div class="diary-header">ТАИНЫЙ ДНИВНИК РОЗЫ</div>
-  <div class="page-title">Запись 6. Today странно.</div>
-
+  <div class="page-title">Запись 6. Сегодня странно.</div>
   <p>...</p>
 
-  <!-- 🔥 СКРЫТАЯ КНОПКА В КОНЦЕ ПОСЛЕДНЕЙ СТРАНИЦЫ -->
-  <a class="hidden-secret-btn"
-     href="https://xuykqubgr6.github.io/XuykQubgr.github.io/"
-     target="_blank">
+  <!-- СКРЫТАЯ КНОПКА -->
+  <a href="https://xuykqubgr6.github.io/XuykQubgr.github.io/"
+     target="_blank"
+     style="
+       display:block;
+       width:240px;
+       height:40px;
+       margin:50px auto;
+       background:transparent;
+       color:transparent;
+       border:none;
+       text-align:center;
+       text-decoration:none;
+       line-height:40px;
+     "
+     onmouseover="this.style.color='black'; this.style.border='2px dotted red'; this.style.background='#ffff99';"
+     onmouseout="this.style.color='transparent'; this.style.border='none'; this.style.background='transparent';">
     तव नियतिः अत्र नास्ति।
   </a>
 
